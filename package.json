@@ -1,0 +1,33 @@
+{
+  "name": "serverless-nodejs-starter-template",
+  "version": "1.0.0",
+  "description": "A boilerplate for new Serverless Nodejs projects with tests and basic configurations",
+  "main": "cli.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "serverless-dotenv-plugin": "^2.1.1"
+  },
+  "scripts": {
+    "deploy": "NODE_ENV=production sls deploy",
+    "deploy-staging": "NODE_ENV=staging sls deploy",
+    "deploy-develop": "NODE_ENV=develop sls deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netcode/serverless-nodejs-starter-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netcode/serverless-nodejs-starter-template/issues"
+  },
+  "homepage": "https://github.com/netcode/serverless-nodejs-starter-template#readme"
+}
