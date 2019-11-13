@@ -7,17 +7,19 @@
     "lib": "lib",
     "test": "test"
   },
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
     "dotenv": "^8.2.0",
-    "serverless-dotenv-plugin": "^2.1.1"
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-offline": "^5.12.0"
   },
   "scripts": {
     "deploy": "NODE_ENV=production sls deploy",
     "deploy-staging": "NODE_ENV=staging sls deploy",
     "deploy-develop": "NODE_ENV=develop sls deploy",
+    "local":"node cli.js",
+    "invoke":"sls invoke local -f hello -p test-data.json",
+    "api":"sls offline start && echo \"You can now make request to http://localhost:3000\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -32,3 +32,4 @@ functions:
 
 plugins:
   - serverless-dotenv-plugin
+  - serverless-offline
