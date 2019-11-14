@@ -61,3 +61,6 @@ typings/
 .env.production
 # next.js build output
 .next
+
+# serverless
+.serverless

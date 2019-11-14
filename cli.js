@@ -1,3 +1,13 @@
 require('dotenv').config();
 
-require('')
+const handler = require('./handler');
+
+( async() => {
+
+    let result = await handler.hello({
+        body: {
+            name: "cli"
+        }
+    }); 
+    console.log(result);
+} ) ()

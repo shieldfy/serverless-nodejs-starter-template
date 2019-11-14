@@ -10,17 +10,19 @@
   "dependencies": {},
   "devDependencies": {
     "dotenv": "^8.2.0",
+    "jest": "^24.9.0",
     "serverless-dotenv-plugin": "^2.1.1",
     "serverless-offline": "^5.12.0"
   },
   "scripts": {
+    "config": "cp .env.example .env && cp .env.example .env.develop && cp .env.example .env.staging && cp .env.example .env.production",
     "deploy": "NODE_ENV=production sls deploy",
     "deploy-staging": "NODE_ENV=staging sls deploy",
     "deploy-develop": "NODE_ENV=develop sls deploy",
-    "local":"node cli.js",
-    "invoke":"sls invoke local -f hello -p test-data.json",
-    "api":"sls offline start && echo \"You can now make request to http://localhost:3000\" ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local": "node cli.js",
+    "invoke": "sls invoke local -f hello -p test-data.json",
+    "api": "sls offline start",
+    "test": "jest -i"
   },
   "repository": {
     "type": "git",
