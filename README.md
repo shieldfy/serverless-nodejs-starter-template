@@ -6,7 +6,7 @@ A boilerplate for new Serverless Nodejs projects with tests and basic configurat
 Simple hello function take name and return with hello
 
 
-```
+``` javascript
 const hello = require('./lib/hello');
 const response = require('./lib/response');
 
