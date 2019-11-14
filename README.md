@@ -30,9 +30,9 @@ module.exports.hello = helloFn
 
 ## Installation
 
-[ ] Install & Configure serverless framework, Guide [here](https://serverless.com/framework/docs/getting-started/)
+* Install & Configure serverless framework, Guide [here](https://serverless.com/framework/docs/getting-started/)
 
-[ ] Clone this repo and run `npm install` then `npm run config`
+* Clone this repo and run `npm install` then `npm run config`
 
 
 ## Test locally
@@ -45,5 +45,15 @@ module.exports.hello = helloFn
 * `npm run deploy` will deploy on production and load your .env.production environment variables
 * `npm run deploy-develop` will deploy on develop and load your .env.production environment variables
 * `npm run deploy-staging` will deploy on staging and load your .env.production environment variables
+
+
+
+## Contribution
+
+Feel free to fork, commit and submit pull request if you find a bug, or you want to add support to a new environment. Contributions are very welcome.
+
+## License
+
+MIT
 
 
